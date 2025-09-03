@@ -9,7 +9,7 @@ return {
         },
         lazy = false, -- neo-tree will lazily load itself
         keys = {
-            { "<leader>ft", "<cmd>Neotree toggle<cr>", desc = "NeoTree" },
+            { "<leader>nt", "<cmd>Neotree toggle<cr>", desc = "NeoTree" },
         },
     },
 }
