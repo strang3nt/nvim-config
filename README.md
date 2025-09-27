@@ -8,6 +8,10 @@ the current state of the repository.
 > I will not include things I do not fully understand
 > (or almost fully :) ).
 
+## Requirements
+
+- neovim (0.11+)
+
 ## Separation of concerns
 
 Thanks to lazy.nvim it is easy to separate plugins
