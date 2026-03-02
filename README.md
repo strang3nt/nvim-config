@@ -4,10 +4,6 @@ This is my personal neovim config. It is a continuous
 effort, as such, this README might be a little behind
 the current state of the repository.
 
-> Everything in this repository is done with intention and purpose.
-> I will not include things I do not fully understand
-> (or almost fully :) ).
-
 ## Requirements
 
 - neovim (0.11+)
@@ -30,13 +26,13 @@ neovim's after-directory mechanism.
 
 ## Plugins and Structure
 
-- lazy.nvim
-- blink_cmp
-- conform
-- lualine
-- mason & mason-lspconfig & nvim-lspconfig
-- neo-tree
-- toggleterm
-- treesitter
-- which-key
+- `lazy.nvim`
+- `blink_cmp`
+- `conform`
+- `lualine`
+- `mason & mason-lspconfig & nvim-lspconfig`
+- `neo-tree`
+- `toggleterm`
+- `treesitter`
+- `which-key`
 
