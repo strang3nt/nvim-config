@@ -33,25 +33,9 @@ return {
         "stevearc/conform.nvim",
         opts = {
             formatters_by_ft = {
-                typescript = { "eslint_d", "prettierd" },
-                typescriptreact = { "eslint_d", "prettierd" },
+                typescript = { "eslint_d", "prettierd", timeout_ms = 2000 },
+                typescriptreact = { "eslint_d", "prettierd", timeout_ms = 2000 },
             },
         },
-        config = function(_, opts)
-            local base_config = opts.format_on_save
-
-            opts.format_on_save = function(bufnr)
-                local ft = vim.bo[bufnr].filetype
-                local config = base_config(bufnr)
-
-                if ft == "typescript" or ft == "typescriptreact" then
-                    config.timeout_ms = 2000
-                end
-
-                return config
-            end
-
-            require("conform").setup(opts)
-        end,
     },
 }
