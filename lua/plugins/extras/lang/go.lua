@@ -10,6 +10,16 @@ return {
     },
 
     {
+        "mason-org/mason.nvim",
+        opts = function(_, opts)
+            vim.list_extend(opts.ensure_installed, {
+                "goimports",
+                "golangci-lint",
+                "golines",
+            })
+        end,
+    },
+    {
         "nvim-treesitter/nvim-treesitter",
         opts = function(_, opts)
             vim.list_extend(opts.ensure_installed, {
@@ -22,7 +32,7 @@ return {
         "stevearc/conform.nvim",
         opts = {
             formatters_by_ft = {
-                go = { "goimports", "gofmt" },
+                go = { "goimports", "golines", "gofmt", "golangci-lint" },
             },
         },
     },
