@@ -1,21 +1,24 @@
 local opt = vim.opt
 
-opt.number = true -- Enables line numbers
-opt.relativenumber = true -- Enables relative line numbers
-opt.autoindent = false -- Indent automatically
-opt.expandtab = true -- expand tab input with spaces characters
-opt.smartindent = false -- syntax aware indentations for newline inserts
-opt.tabstop = 2 -- num of space characters per tab
-opt.shiftwidth = 2 -- spaces per indentation level
-opt.cursorline = true -- Enables cursor line
-opt.ignorecase = true -- Ignore case when searching
-opt.splitright = true -- Split to the right on vertical
-opt.splitbelow = true -- Split below when horizontal
-opt.swapfile = false -- Don't use swap files (I use auto-save.nvim instead)
+opt.number = true
+opt.relativenumber = true
+opt.autoindent = false
+opt.expandtab = true
+opt.smartindent = false
+opt.tabstop = 2
+opt.shiftwidth = 2
+opt.cursorline = true
+opt.ignorecase = true
+opt.splitright = true
+opt.splitbelow = true
 opt.colorcolumn = { 80, 100, 120 }
-opt.wrap = true -- Wrap lines
-opt.updatetime = 100 -- mainly for trld.nvim which utilize CursorHold autocmd
-opt.formatoptions:append("cro") -- continue comments when going down a line, hit C-u to remove the added comment prefix
-opt.sessionoptions:remove("options") -- don't save keymaps and local options
-opt.foldlevelstart = 99 -- no auto folding
+opt.wrap = true
+
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.foldlevelstart = 99
+opt.foldcolumn = "1"
+opt.foldlevel = 99
+opt.foldenable = true
+
 opt.clipboard = "unnamedplus"
