@@ -5,6 +5,7 @@ return {
         opts = function(_, opts)
             vim.list_extend(opts.ensure_installed, {
                 "gopls",
+                "golangci_lint_ls",
             })
         end,
     },
