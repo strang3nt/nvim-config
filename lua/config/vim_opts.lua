@@ -17,7 +17,7 @@ opt.wrap = true
 opt.foldmethod = "manual"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
 opt.foldlevelstart = 99
-opt.foldcolumn = "1"
+--opt.foldcolumn = "1"
 opt.foldlevel = 99
 opt.foldenable = true
 
