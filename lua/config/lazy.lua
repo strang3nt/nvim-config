@@ -26,12 +26,15 @@ vim.g.maplocalleader = "\\"
 
 require("config.vim_opts")
 require("config.lsp_opts")
+local theme_selector = require("core.theme")
 
 require("lazy").setup({
     spec = {
         { import = "plugins" },
         { import = "plugins.extras.lang" },
     },
-    install = { colorscheme = { "kanagawa" } },
+    install = { colorscheme = { theme_selector.load_colorscheme() } },
     checker = { enabled = true },
 })
+
+theme_selector.apply()

@@ -24,6 +24,17 @@ Moreover, default configurations from nvim-lspconfig are applied,
 and then overwritten by `after/lsp`, leveraging 
 neovim's after-directory mechanism.
 
+## Custom keys
+
+### Normal mode
+
+| Key | Description |
+|-----|-------------|
+| `space + f + f` | Opens Telescope file selector |
+| `space + b` | Opens Telescope buffer selector |
+| `space + c + s` | Opens Telescope theme selector |
+| `space + f + g` | Opens Telescope live grep tool |
+
 ## Plugins and Structure
 
 - `lazy.nvim`

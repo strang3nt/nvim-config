@@ -30,6 +30,14 @@ return {
                 desc = "Telescope find files",
             },
             {
+                "<leader>cs",
+                function()
+                    require("telescope.builtin").colorscheme()
+                end,
+                mode = "n",
+                desc = "Telescope colorscheme",
+            },
+            {
                 "<leader>fg",
                 function()
                     require("telescope.builtin").live_grep()
@@ -42,6 +50,31 @@ return {
             local actions = require("telescope.actions")
             return {
                 pickers = {
+                    colorscheme = {
+                        enable_preview = true,
+                        previewer = false,
+                        layout_config = {
+                            height = 0.4,
+                            width = 0.5,
+                        },
+                        attach_mappings = function(_, map)
+                            local action_state =
+                                require("telescope.actions.state")
+                            local theme_selector = require("core.theme")
+                            local save_colorscheme = function(prompt_bufnr)
+                                local selection =
+                                    action_state.get_selected_entry()
+                                local theme = selection.value
+                                actions.close(prompt_bufnr)
+                                vim.cmd.colorscheme(theme)
+                                theme_selector.save_colorscheme(theme)
+                            end
+                            map("n", "<CR>", save_colorscheme)
+                            map("i", "<CR>", save_colorscheme)
+                            return true
+                        end,
+                    },
+
                     buffers = {
                         mappings = {
                             i = {
