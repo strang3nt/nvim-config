@@ -32,6 +32,7 @@ require("lazy").setup({
     spec = {
         { import = "plugins" },
         { import = "plugins.extras.lang" },
+        { import = "plugins.extras.themes" },
     },
     install = { colorscheme = { theme_selector.load_colorscheme() } },
     checker = { enabled = true },
