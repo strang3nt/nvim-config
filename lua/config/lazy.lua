@@ -31,6 +31,7 @@ local theme_selector = require("core.theme")
 require("lazy").setup({
     spec = {
         { import = "plugins" },
+        { import = "plugins.extras.meta" },
         { import = "plugins.extras.lang" },
         { import = "plugins.extras.themes" },
     },

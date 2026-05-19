@@ -5,7 +5,6 @@ return {
         cmd = { "ConformInfo" },
         keys = {
             {
-                -- Customize or remove this keymap to your liking
                 "<leader>f",
                 function()
                     require("conform").format({ async = true })
@@ -19,16 +18,15 @@ return {
         ---@type conform.setupOpts
         opts = {
 
-            -- Set default options
             default_format_opts = {
                 lsp_format = "fallback",
                 timeout_ms = 500,
             },
-            -- Set up format-on-save
+
             format_on_save = function(_)
                 return {}
             end,
-            -- Customize formatters
+
             formatters = {
                 shfmt = {
                     append_args = { "-i", "2" },
@@ -36,7 +34,6 @@ return {
             },
         },
         init = function()
-            -- If you want the formatexpr, here is the place to set it
             vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
         end,
     },
