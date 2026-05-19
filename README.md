@@ -37,7 +37,8 @@ Leader key `<leader>` is set to space key `spc`.
 | `toggleterm.nvim` | Toggles terminals |
 | `treesitter` | Language parser, coloring |
 | `which-key` | Keys suggestions |
-| `nvim-ufo` | Toggles code outline |
+| `outline` | Toggles code outline |
+| `nvim_ufo` | Toggles folds |
 | `image.nvim` | Image visualization inside terminal |
 | `lazydev` | Loads automagically type signatures into LuaLS |
 
