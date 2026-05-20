@@ -13,8 +13,6 @@ opt.splitright = true
 opt.splitbelow = true
 opt.colorcolumn = { 80, 100, 120 }
 opt.wrap = true
-
-opt.foldmethod = "manual"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
 opt.foldlevelstart = 99
 --opt.foldcolumn = "1"

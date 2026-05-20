@@ -3,21 +3,20 @@ return {
         "nvim-lualine/lualine.nvim",
         dependencies = {
             "nvim-tree/nvim-web-devicons",
-            "rebelot/kanagawa.nvim",
         },
         opts = {
 
             options = {
                 icons_enabled = true,
                 theme = "auto",
-                component_separators = { left = "", right = "" },
-                section_separators = { left = "", right = "" },
+                component_separators = "",
+                section_separators = "",
                 disabled_filetypes = {
                     statusline = {},
                     winbar = {},
                 },
                 ignore_focus = {},
-                always_divide_middle = true,
+                always_divide_middle = false,
                 globalstatus = true,
                 refresh = {
                     statusline = 1000,
@@ -42,7 +41,18 @@ return {
                 lualine_y = {},
                 lualine_z = {},
             },
-            tabline = {},
+            tabline = {
+                lualine_a = {
+                    {
+                        "buffers",
+                        buffers_color = {
+                            inactive = "lualine_b_normal",
+                            active = "lualine_a_normal",
+                        },
+                    },
+                },
+                lualine_z = { "tabs" },
+            },
             winbar = {},
             inactive_winbar = {},
             extensions = {},
