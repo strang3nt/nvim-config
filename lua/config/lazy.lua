@@ -26,6 +26,7 @@ vim.g.maplocalleader = "\\"
 
 require("config.vim_opts")
 require("config.lsp_opts")
+require("config.mappings")
 local theme_selector = require("core.theme")
 
 require("lazy").setup({
