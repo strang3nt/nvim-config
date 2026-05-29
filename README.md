@@ -9,20 +9,28 @@ the current state of the repository.
 - neovim (0.11+)
 - [ueberzugpp](https://github.com/jstkdng/ueberzugpp), image visualization
 
-## Keybinds
+## Custom commands
 
 Leader key `<leader>` is set to space key `spc`.
 
 ### Normal mode
 
-| Key | Description |
+| Command | Description |
 |-----|-------------|
-| `spc + f + f` | Opens Telescope file selector |
-| `spc + b` | Opens Telescope buffer selector |
-| `spc + c + s` | Opens Telescope theme selector |
-| `spc + f + g` | Opens Telescope live grep tool |
+| `spc + t + f` | Opens Telescope file selector |
+| `spc + t + b` | Opens Telescope buffer selector |
+| `spc + t + c` | Opens Telescope theme selector |
+| `spc + t + g` | Opens Telescope live grep tool |
+| `spc + f` | Formats current buffer |
 | `spc + o` | Toggles code outline |
 | `spc + j` | Toggles terminal emulator |
+| `spc + b + d` | Deletes current buffer
+
+### Insert mode
+
+| Command | Description |
+|-----|-------------|
+| `<c-b>` | Opens Telescope buffer selector |
 
 ## Plugins and Structure
 

@@ -5,7 +5,7 @@ return {
         dependencies = { "nvim-lua/plenary.nvim" },
         keys = {
             {
-                "<leader>b",
+                "<leader>tb",
                 function()
                     require("telescope.builtin").buffers()
                 end,
@@ -22,7 +22,7 @@ return {
                 desc = "Telescope find Buffers",
             },
             {
-                "<leader>ff",
+                "<leader>tf",
                 function()
                     require("telescope.builtin").find_files()
                 end,
@@ -30,7 +30,7 @@ return {
                 desc = "Telescope find files",
             },
             {
-                "<leader>cs",
+                "<leader>tc",
                 function()
                     require("telescope.builtin").colorscheme()
                 end,
@@ -38,7 +38,7 @@ return {
                 desc = "Telescope colorscheme",
             },
             {
-                "<leader>fg",
+                "<leader>tg",
                 function()
                     require("telescope.builtin").live_grep()
                 end,
