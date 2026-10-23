@@ -23,10 +23,6 @@ return {
                 timeout_ms = 500,
             },
 
-            format_on_save = function(_)
-                return {}
-            end,
-
             formatters = {
                 shfmt = {
                     append_args = { "-i", "2" },
