@@ -6,7 +6,7 @@ the current state of the repository.
 
 ## Requirements
 
-- neovim (0.11+)
+- neovim (0.12+)
 - [ueberzugpp](https://github.com/jstkdng/ueberzugpp), image visualization
 
 ## Custom commands
@@ -49,6 +49,11 @@ Leader key `<leader>` is set to space key `spc`.
 | `nvim_ufo` | Toggles folds |
 | `image.nvim` | Image visualization inside terminal |
 | `lazydev` | Loads automagically type signatures into LuaLS |
+| `markview` | Pretty visualization for markdown |
+| `agentic.nvim` | Plug the llm harness into nvim |
+| `smear-cursor`, `neoscroll` | Make nvim smoother and cooler |
+| `neogit` | A git diff tool | 
+
 
 ### Configuration structure
 
