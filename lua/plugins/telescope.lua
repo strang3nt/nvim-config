@@ -9,7 +9,7 @@ return {
                 function()
                     require("telescope.builtin").buffers()
                 end,
-                mode = "n",
+                mode = { "n" },
                 desc = "Telescope find Buffers",
             },
 
@@ -18,7 +18,7 @@ return {
                 function()
                     require("telescope.builtin").buffers()
                 end,
-                mode = "i",
+                mode = { "i" },
                 desc = "Telescope find Buffers",
             },
             {
@@ -26,7 +26,7 @@ return {
                 function()
                     require("telescope.builtin").find_files()
                 end,
-                mode = "n",
+                mode = { "n" },
                 desc = "Telescope find files",
             },
             {
@@ -34,7 +34,7 @@ return {
                 function()
                     require("telescope.builtin").colorscheme()
                 end,
-                mode = "n",
+                mode = { "n" },
                 desc = "Telescope colorscheme",
             },
             {
@@ -42,7 +42,7 @@ return {
                 function()
                     require("telescope.builtin").live_grep()
                 end,
-                mode = "n",
+                mode = { "n" },
                 desc = "Telescope live grep",
             },
         },
