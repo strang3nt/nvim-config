@@ -1,8 +1,7 @@
 return {
     {
         "nvim-treesitter/nvim-treesitter",
-        branch = "main",
-        main = "nvim-treesitter.config",
+        lazy = false,
         event = function()
             return { "BufReadPost", "BufWritePost", "BufNewFile" }
         end,
