@@ -4,7 +4,7 @@ return {
 
         --- @type agentic.PartialUserConfig
         opts = {
-            providers = "pi-acp",
+            provider = "pi-acp",
         },
 
         keys = {
