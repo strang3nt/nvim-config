@@ -52,7 +52,8 @@ Leader key `<leader>` is set to space key `spc`.
 | `markview` | Pretty visualization for markdown |
 | `agentic.nvim` | Plug the llm harness into nvim |
 | `smear-cursor`, `neoscroll` | Make nvim smoother and cooler |
-| `neogit` | A git diff tool | 
+| `neogit` | A git diff tool |
+| `flash.nvim` | Navigate quickly through text and code |
 
 
 ### Configuration structure
