@@ -11,5 +11,30 @@ return {
         keys = {
             { "<leader>nt", "<cmd>Neotree toggle<cr>", desc = "NeoTree" },
         },
+        opts = {
+            default_component_configs = {
+                indent = {
+                    with_expanders = true,
+                },
+            },
+            window = {
+                position = "left",
+                width = 40,
+                mapping_options = {
+                    noremap = true,
+                    nowait = true,
+                },
+                mappings = {
+                    ["<space>"] = "none",
+                },
+            },
+            filesystem = {
+                filtered_items = {
+                    visible = true,
+                    hide_dotfiles = false,
+                    hide_gitignored = false,
+                },
+            },
+        },
     },
 }
