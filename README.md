@@ -40,12 +40,11 @@ Leader key `<leader>` is set to space key `spc`.
 | `blink_cmp` | Code completion, suggestions |
 | `conform` | Formatting, linting |
 | `lualine` | Status line |
-| `mason`, `mason-lspconfig`, `nvim-lspconfig` | Package manager, language tooling | 
-| `neo-tree` | File manager, navigation |
+| `mason`, `mason-lspconfig`, `nvim-lspconfig` | Package manager for language tooling | 
+| `neo-tree` | File manager, code outline |
 | `toggleterm.nvim` | Toggles terminals |
 | `treesitter` | Language parser, coloring |
 | `which-key` | Keys suggestions |
-| `outline` | Toggles code outline |
 | `nvim_ufo` | Toggles folds |
 | `image.nvim` | Image visualization inside terminal |
 | `lazydev` | Loads automagically type signatures into LuaLS |

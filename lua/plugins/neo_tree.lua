@@ -9,9 +9,15 @@ return {
         },
         lazy = false,
         keys = {
-            { "<leader>nt", "<cmd>Neotree toggle<cr>", desc = "NeoTree" },
+            { "<leader>nt", "<cmd>Neotree toggle<cr>", desc = "Neotree filesystem" },
+            {
+                "<leader>o",
+                "<cmd>Neotree document_symbols<cr>",
+                desc = "Neotree outline",
+            },
         },
         opts = {
+            sources = { "filesystem", "buffers", "git_status", "document_symbols" },
             default_component_configs = {
                 indent = {
                     with_expanders = true,
