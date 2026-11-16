@@ -5,11 +5,26 @@ return {
         lazy = false,
         ---@type snacks.Config
         opts = {
-            -- your configuration comes here
-            -- or leave it empty to use the default settings
-            -- refer to the configuration section below
             bigfile = { enabled = true },
-            dashboard = { enabled = true },
+            dashboard = {
+                enabled = true,
+                sections = {
+                    {
+                        section = "terminal",
+                        cmd = "find "
+                            .. vim.fn.stdpath("config")
+                            .. "/img"
+                            .. " -type f \\( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' \\) | shuf -n1 | xargs -r chafa --format symbols --symbols vhalf --size 60x17 --stretch; sleep .1",
+                        height = 17,
+                        padding = 1,
+                    },
+                    {
+                        pane = 2,
+                        { section = "keys", gap = 1, padding = 1 },
+                        { section = "startup" },
+                    },
+                },
+            },
             explorer = { enabled = true },
             indent = { enabled = true },
             input = { enabled = true },
