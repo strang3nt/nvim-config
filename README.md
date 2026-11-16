@@ -41,18 +41,14 @@ Leader key `<leader>` is set to space key `spc`.
 | `conform` | Formatting, linting |
 | `lualine` | Status line |
 | `mason`, `mason-lspconfig`, `nvim-lspconfig` | Package manager for language tooling | 
-| `neo-tree` | File manager, code outline |
-| `toggleterm.nvim` | Toggles terminals |
 | `treesitter` | Language parser, coloring |
 | `which-key` | Keys suggestions |
 | `nvim_ufo` | Toggles folds |
 | `image.nvim` | Image visualization inside terminal |
-| `lazydev` | Loads automagically type signatures into LuaLS |
 | `markview` | Pretty visualization for markdown |
 | `agentic.nvim` | Plug the llm harness into nvim |
-| `smear-cursor`, `neoscroll` | Make nvim smoother and cooler |
-| `neogit` | A git diff tool |
 | `flash.nvim` | Navigate quickly through text and code |
+| `snacks.nvim` | Does everything (file explorers, lots of pickers |
 
 
 ### Configuration structure
